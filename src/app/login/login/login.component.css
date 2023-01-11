@@ -1,0 +1,101 @@
+/*ubicar el form en la mitad de la pantalla derecha*/
+
+form{
+    
+    width: 50%;
+
+    display: flex; /* propiedad flexbox */
+    justify-content: center; /* centra el contenido horizontalmmente */    
+    align-items: center; /* centra el contenido verticalmente */
+    flex-direction: column; /* coloca los elementos uno debajo del otro */
+    position:absolute; /* centra el contenido en la parte derecha de la pantalla */
+    right: 0;
+    width:50%
+}
+
+label{
+    display: block;
+    width: 80%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.form-control{
+    
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.checkbox{
+  /*  margin-right: 38rem;*/
+  /*checkbox a la izquierda*/
+ 
+    
+
+    
+}
+
+
+
+
+.btn{
+    background-color: rgb(10, 109, 180);
+    color: white;
+    width: 80%;
+    height: 50px;
+    margin-bottom: 10px; 
+    border-radius: 8px;
+    border-color: white; 
+    
+}
+.olvido{
+    color: rgb(10, 109, 180);
+    text-decoration: none;
+    font-size: 15px;
+    left:0; 
+    align-content: flex-end;
+    margin-bottom: 10px;    
+}
+.olvido:hover{
+    color: rgb(129, 177, 212);
+   
+}
+.registro{
+    color: rgb(10, 109, 180);
+    text-decoration: none;
+    font-size: 15px;
+    left:0; 
+    align-content: flex-end;
+    margin-bottom: 10px;  
+}   
+.registro:hover{
+    color: rgb(129, 177, 212);
+}
+
+.btn:hover{
+    background-color: rgb(10, 109, 180);
+    color: white;
+    width: 80%;
+    height: 50px;
+    opacity: 0.8; 
+      
+          
+}
+.container{
+    background: url("../welcome/asset/imagen-bddo.png");
+    background-repeat: no-repeat;
+    float: left; 
+    width: 50%;
+    height: 100%;
+    /*alinear contenidos dentro del container*/
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    
+   
+    
+    
+}
+.container2{
+    margin-top: -220px;
+}

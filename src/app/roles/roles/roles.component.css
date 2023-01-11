@@ -1,0 +1,144 @@
+.container{
+
+    background: url("../roles/asset/imagen-bddo.png");
+    background-repeat: no-repeat;
+    float: left; 
+    width: 50%;
+    height: 100%;
+    /*alinear contenidos dentro del container*/
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    
+    
+
+    
+    
+}
+.container2{
+    width: 50%;
+
+    display: flex; /* propiedad flexbox */
+    justify-content: center; /* centra el contenido horizontalmmente */    
+    margin-right: -120px;
+    flex-direction: column; /* coloca los elementos uno debajo del otro */
+    position:absolute; /* centra el contenido en la parte derecha de la pantalla */
+    right: 0;
+    
+    
+}
+.input-Empleado{
+    background-image: url('../roles/asset/empleado.png');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 80%;
+    margin-bottom: 10px;
+    
+}
+
+.input-Empleado input{
+    background-color: transparent;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #000;
+    
+    
+}
+  
+  .input-Empleado input:focus {
+    
+    outline: none;
+  }
+
+  .input-RRHH{
+    background-image: url('../roles/asset/rrhh.png');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 80%;
+    margin-bottom: 10px;
+    
+}
+
+.input-RRHH input{
+    background-color: transparent;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #000;
+    
+}
+  
+  .input-RRHH input:focus {
+    
+    outline: none;
+  }
+
+  .input-Seguridad{
+    background-image: url('../roles/asset/seguridad.png');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 80%;
+    margin-bottom: 10px;
+    
+}
+
+.input-Seguridad input{
+    background-color: transparent;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #000;
+    
+}
+  
+  .input-Seguridad input:focus {
+    
+    outline: none;
+  }
+
+
+  .input-Administracion{
+    background-image: url('../roles/asset/admin.png');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 80%;
+    
+}
+
+.input-Administracion input{
+    background-color: transparent;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #000;
+    
+}
+  
+  .input-Administracion input:focus {
+    
+    outline: none;
+  }
+
+
+  .input:hover{
+    background-color: rgb(10, 109, 180);
+    color: white;
+  }
+
+  .form-control{
+    width: 80%;
+  }
+  

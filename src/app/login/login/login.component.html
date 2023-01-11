@@ -1,0 +1,34 @@
+    <!-- uso el ng submit para escuchar el evento del login y capturar los datos del usuario y contraseña -->
+    <div class="container">
+        <div class="container1">
+            <app-welcome></app-welcome>
+        </div>
+    
+<div class="container2">
+    <form  (ngSubmit)="onSubmit()">
+        <label class="form-label"  for="login" style="font-size:x-large">Log In</label>
+        <label class="form-label"  for="username">Usuario</label>
+        <input class="form-control"  id="usuario" type="text" id="usuario" name="usuario"  placeholder="Ingresa su usuario"/>
+        <label class="form-label"   for="password">Contraseña</label>
+        <input class="form-control" id="contraseña" type="password" id="contraseña" name="contraseña" placeholder="Ingresa su contraseña" />
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+              Recuerdame
+        </label>
+          </div>
+        
+        <a class="olvido" for="Olvido" href="#">Olvide mi contraseña</a>
+        
+
+
+        <a class="btn" value="Ingresar" routerLink="/roles" routerLinkActive="router-link-active"  >Ingresar</a>
+
+        <p >No tienes una cuenta?</p>
+        <a type="button" class="registro" value="Registrarte" href="#" >Registrate</a>
+        
+    </form>
+</div>
+   
+</div>
+    
