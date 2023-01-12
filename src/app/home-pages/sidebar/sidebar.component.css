@@ -1,0 +1,45 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .example-is-mobile .example-toolbar {
+    
+    /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+    
+  }
+  
+  
+  
+  .example-sidenav-container {
+    /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+       causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+    flex: 1;
+  }
+  
+  
+.sidebar{
+    background-color: rgb(17, 94, 94);
+    width: 25%;
+    
+}
+.example-toolbar{
+    background-color: rgb(32, 110, 110); 
+    
+}
+.mat-list-item{
+    color:white
+}
+.btn{
+    background-color: aliceblue;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+  

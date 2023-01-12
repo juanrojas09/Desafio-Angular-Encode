@@ -1,0 +1,33 @@
+<!--sidebar-->
+<!--
+<div class="sidebar">
+    
+  </div>
+  -->
+
+  <div class="example-container" *ngIf="shouldRun">
+    <mat-toolbar color="primary" class="example-toolbar">
+
+      <button mat-icon-button class="btn" (click)="snav.toggle()">
+        <mat-icon >menu</mat-icon></button>
+      
+    </mat-toolbar>
+        
+    
+    <mat-sidenav-container class="example-sidenav-container">
+      <mat-sidenav #snav 
+                    fixedTopGap="56" class="sidebar">
+        <mat-nav-list >
+            <mat-icon></mat-icon>
+          <a mat-list-item routerLink="nav.route" *ngFor="let nav of fillerNav" >{{nav.name}}</a>
+        </mat-nav-list>
+      </mat-sidenav>
+  
+      <mat-sidenav-content>
+       <!-- <p *ngFor="let content of fillerContent">{{content}}</p>-->
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
+  
+
+ 

@@ -6,6 +6,9 @@ import { LoginModule } from './login/login.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RolesModule } from './roles/roles.module';
 import { AppRoutingModule } from './app-routing.module';
+import { HomePagesModule } from './home-pages/home-pages.module';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,11 @@ import { AppRoutingModule } from './app-routing.module';
     LoginModule,
     BrowserAnimationsModule,
     RolesModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HomePagesModule,
+    MatSidenavModule,
+    MatListModule
+    
     
   ],
   providers: [],
