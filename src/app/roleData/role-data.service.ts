@@ -8,15 +8,19 @@ export class RoleDataService {
 dataRol:RoleInterface[]=[
   
 ]
-  constructor() { }
+  constructor() {
+    
+    ;
+   }
 
   getData(){
-    return this.dataRol;
+    return localStorage.getItem("rol");
     console.log(this.dataRol)
   }
 
    setData(rol:string){
     this.dataRol.push({rol:rol});
-
+    localStorage.setItem("rol",this.dataRol[0].rol)
   }
+  
 }

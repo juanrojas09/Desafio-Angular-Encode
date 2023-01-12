@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RoleInterface } from 'src/app/roleData/roleInterface';
 import { Roledata } from '../../roleData/roleData';
 import { RoleDataService } from '../../roleData/role-data.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-roles',
@@ -17,16 +18,34 @@ export class RolesComponent {
   dataRole:RoleInterface[]=[
   ]
   
-  constructor(private roles:RoleDataService) {
+  constructor(private roles:RoleDataService,private router: Router) {
     //aca le mando al array de roledata el rol que corresponde, que se selecciono
   
   
   }
-
+  redirect(rol:string){
+   
+  }
   pushRol(rol:string){
     console.log(rol)
     this.roles.setData(rol);
+
     console.log(this.roles.dataRol)
+    switch (rol) {
+      case "Empleado":
+      this.router.navigate(['/empleado']);
+        break;
+        case "RRHH":
+        this.router.navigate(['/RRHH']);
+        break;
+      case "Seguridad":
+      this.router.navigate(['/seguridad']);
+        break;
+      case "Administrador":
+      this.router.navigate(['/administracion']);
+        break;
+
+  }
     
   }
 }

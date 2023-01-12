@@ -1,4 +1,5 @@
 import {ChangeDetectorRef, Component, OnDestroy, OnInit} from '@angular/core';
+import { Router } from '@angular/router';
 import { Data } from 'src/app/data/data';
 import { DataService } from 'src/app/data/data.service';
 import { DataImterface } from 'src/app/data/dataInterfaces';
@@ -25,7 +26,7 @@ export class SidebarComponent implements OnInit {
    
     dataOpction: DataImterface[] = []
   
-    constructor(private datos:DataService,private role:RoleDataService) {
+    constructor(private datos:DataService,private role:RoleDataService,private router:Router) {
  
      
       
@@ -36,17 +37,35 @@ export class SidebarComponent implements OnInit {
 var rol=this.role.getData();
 console.log(rol)
   
-    this.dataOpction=this.datos.getData(1);
+    switch (rol) {
+      case "Empleado":
+      this.dataOpction=this.datos.getData(1);
+        break;
+      case "Seguridad":
+      this.dataOpction=this.datos.getData(3);
+        break;
+      case "Administrador":
+      this.dataOpction=this.datos.getData(2);
+        break;
+        case "RRHH":
+      this.dataOpction=this.datos.getData(2);
+        break;
      
-    
+    }
     console.log(this.dataOpction)
 
   }
 
-
-    ngOnDestroy(): void {
-      throw new Error('Method not implemented.');
-    }
+  
+   redirect(route:string){
+   switch(route){
+      case "Dashboard":
+      this.router.navigate(['/dashboard']);
+      console.log("dashboard")
+      break;
+   }
+  }
   
     shouldRun = true;
-  }
+  
+}

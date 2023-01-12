@@ -50,7 +50,11 @@
     <p>Mariano Lopez</p>
     
     <hr>
-    <a mat-list-item routerLink="nav.route"  *ngFor="let nav of dataOpction" >{{nav.name}}</a>
+    <div class="item-group">
+      <i *ngFor="let nav of dataOpction">{{nav.icon}}> </i>
+    <a class="item" style="color: white;" mat-list-item routerLink="nav.route"  *ngFor="let nav of dataOpction" (click)="redirect(nav.name)" >{{nav.name}}</a>
+    
+  </div>
   </mat-sidenav>
   <mat-sidenav-content>
   

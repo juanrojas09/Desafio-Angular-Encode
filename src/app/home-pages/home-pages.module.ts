@@ -5,7 +5,7 @@ import { RRHHHomeComponent } from './rrhh-home/rrhh-home.component';
 import { SeguridadHomeComponent } from './seguridad-home/seguridad-home.component';
 import { AdministracionHomeComponent } from './administracion-home/administracion-home.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { NavbarComponent } from './navbar/navbar.component';
+
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -20,7 +20,7 @@ import { FormsModule } from '@angular/forms';
     SeguridadHomeComponent,
     AdministracionHomeComponent,
     SidebarComponent,
-    NavbarComponent,
+  
     
 
   ],
@@ -40,7 +40,7 @@ import { FormsModule } from '@angular/forms';
     SeguridadHomeComponent,
     AdministracionHomeComponent,
     SidebarComponent,
-    NavbarComponent
+    
 
   ]
 })

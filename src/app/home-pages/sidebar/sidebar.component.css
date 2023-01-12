@@ -15,15 +15,15 @@
     height: 30px;
     
 }
-a{
-  font-size: large;
-  color: white;
+.item{
+  font-size: x-large;
+  
+  text-decoration: none;
+ 
  
 }
-a:hover{
-  color: white;
-  
-}
+
+
 
 .mat-sidenav-content{
   background-color: white;
