@@ -4,7 +4,7 @@
     
   </div>
   -->
-
+<!--
   <div class="example-container" *ngIf="shouldRun">
     <mat-toolbar color="primary" class="example-toolbar">
 
@@ -25,9 +25,35 @@
   
       <mat-sidenav-content>
        <!-- <p *ngFor="let content of fillerContent">{{content}}</p>-->
-      </mat-sidenav-content>
+     <!-- </mat-sidenav-content>
     </mat-sidenav-container>
   </div>
   
-
+-->
  
+
+<mat-toolbar class="navbar">
+  <mat-toolbar-row>
+    <button mat-button (click)="opened=!opened"><mat-icon>menu
+    </mat-icon></button>
+      
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav [(opened)]="opened" mode="side">
+    <div class="contenedor-imagen">
+      <img
+        
+      />
+    </div>
+    <p>Mariano Lopez</p>
+    
+    <hr>
+    <a mat-list-item routerLink="nav.route" *ngFor="let nav of fillerNav" >{{nav.name}}</a>
+  </mat-sidenav>
+  <mat-sidenav-content>
+  
+ 
+  </mat-sidenav-content>
+</mat-sidenav-container>
