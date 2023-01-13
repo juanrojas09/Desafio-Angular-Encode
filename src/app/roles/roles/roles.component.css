@@ -16,11 +16,11 @@
     
 }
 .container2{
-    width: 50%;
+    width: 40%;
 
     display: flex; /* propiedad flexbox */
     justify-content: center; /* centra el contenido horizontalmmente */    
-    margin-right: -120px;
+    
     flex-direction: column; /* coloca los elementos uno debajo del otro */
     position:absolute; /* centra el contenido en la parte derecha de la pantalla */
     right: 0;
