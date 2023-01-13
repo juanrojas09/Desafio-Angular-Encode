@@ -43,16 +43,20 @@
 <mat-sidenav-container>
   <mat-sidenav [(opened)]="opened" mode="side">
     <div class="contenedor-imagen">
-      <img
-        
-      />
+      <img  alt="" class="imagen">
     </div>
     <p>Mariano Lopez</p>
+    <p  *ngFor="let nav of dataRol" (click)="getNameRol()">{{nav.rol}}</p>
     
     <hr>
     <div class="item-group">
-      <i *ngFor="let nav of dataOpction">{{nav.icon}}> </i>
-    <a class="item" style="color: white;" mat-list-item routerLink="nav.route"  *ngFor="let nav of dataOpction" (click)="redirect(nav.name)" >{{nav.name}}</a>
+      
+      
+     
+    <p class="item" style="color: white;" mat-list-item routerLink="nav.route"  *ngFor="let nav of dataOpction" (click)="redirect(nav.name)" >
+      <img id="imag"   width="24" height="24" />
+     {{nav.name}}
+    </p>
     
   </div>
   </mat-sidenav>

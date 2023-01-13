@@ -7,7 +7,7 @@ import { DataImterface } from './dataInterfaces';
 export class DataService {
 
   datosEmployee:DataImterface[]=[
-    {name:"Dashboard",route:"",icon:"../assets/icons/"},
+    {name:"Dashboard",route:"",icon:"../sidebar/assets/sidebarrrhh/dashboard.png"},
     {name:"Bandeja de documentos",route:"",icon:"bandeja"},
     {name:"certificados",route:"",icon:"certificados"},
     {name:"Permisos/licencias",route:"",icon:"permisos"},

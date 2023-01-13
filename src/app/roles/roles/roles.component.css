@@ -1,6 +1,7 @@
 .container{
 
     background: url("../roles/asset/imagen-bddo.png");
+   
     background-repeat: no-repeat;
     float: left; 
     width: 50%;
@@ -99,6 +100,7 @@
     font-weight: 300;
     color: #000;
     
+    
 }
   
   .input-Seguridad input:focus {
@@ -113,17 +115,21 @@
     background-repeat: no-repeat;
     background-position: left;
     width: 80%;
+    margin-bottom: 10px;
     
+}
+input{
+  width: 80%; 
 }
 
 .input-Administracion input{
-    background-color: transparent;
-    border-bottom: 1px solid #ccc;
-    padding: 15px;
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    color: #000;
+  background-color: transparent;
+  border-bottom: 1px solid #ccc;
+  padding: 15px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #000;
     
 }
   
@@ -133,10 +139,58 @@
   }
 
 
-  .input:hover{
-    background-color: rgb(10, 109, 180);
-    color: white;
+  #Administracion:hover{
+  transition: all 0.3s ease 0s;
+  color: white;
+  background-color: rgb(35, 113, 113);
+  background-image: url('../roles/asset/admin.png');
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 80%;
+ 
+    
   }
+
+  #Seguridad:hover{
+  transition: all 0.3s ease 0s;
+  color: white;
+  background-color: rgb(35, 113, 113);
+  background-image: url('../roles/asset/seguridad.png');
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 80%;
+ 
+    
+  }
+
+  #RRHH:hover{
+  transition: all 0.3s ease 0s;
+  color: white;
+  background-color: rgb(35, 113, 113);
+  background-image: url('../roles/asset/rrhh.png');
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 80%;
+ 
+    
+  }
+
+  #Empleado:hover{
+  transition: all 0.3s ease 0s;
+  color: white;
+  background-color: rgb(35, 113, 113);
+  background-image: url('../roles/asset/empleado.png');
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 80%;
+ 
+    
+  }
+
 
   .form-control{
     width: 80%;

@@ -11,6 +11,8 @@ import { AdministracionHomeComponent } from './home-pages/administracion-home/ad
 import { SidebarComponent } from './home-pages/sidebar/sidebar.component';
 
 const routes:Routes=[
+  //ruta por defecto
+
   {
     path:'login',
     component:LoginComponent
@@ -40,7 +42,11 @@ const routes:Routes=[
   {
     path:'sidebar',
     component:SidebarComponent
-  }
+  },
+  {
+    path:'**',
+    redirectTo:'/login',
+}
 
 ]
 

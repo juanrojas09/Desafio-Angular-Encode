@@ -33,10 +33,35 @@ label{
     
 
     
+}   
+
+
+   
+    
+
+
+
+.container2 .row label{
+    width: 30px;
+}
+ .container2 .row a{
+    margin-top: -31px;
+    margin-left: 150px;
+   
+    
 }
 
+ .container2 .row2 a{
+    margin-top: -80px;
+    margin-left: 4px;
+   
+    
+}
 
-
+#txt{
+    width: 1px;
+    display: inline;
+}
 
 .btn{
     background-color: rgb(10, 109, 180);
@@ -91,6 +116,8 @@ label{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    
        
     
    
@@ -100,3 +127,9 @@ label{
 .container2{
     margin-top: -220px;
 }
+
+
+
+
+
+
