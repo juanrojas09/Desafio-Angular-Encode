@@ -109,6 +109,13 @@ p{
   width: 100%;
   height: 100%;
   object-fit: cover;
+
+ 
+
+}
+.contenedor-imagen  {
+
+  
  
 
 }
@@ -141,10 +148,8 @@ background-image: url("../sidebar/assets/sidebarempleado/menu.png");
   background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
- 
-  margin-left: 160px;
- 
-  cursor: pointer;
+ margin-left: 160px;
+ cursor: pointer;
 }
 
 #btnEmpresa{
@@ -206,4 +211,79 @@ background-image: url("../sidebar/assets/sidebarempleado/menu.png");
     }
    
 
+    #btnLogout{
 
+      background-image: url("../sidebar/assets/menunav/logout.png");
+      background-size: 18px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: transparent;
+     /*separar icono del contenedor*/
+     cursor: pointer;
+     margin-left: 10px;
+  
+        
+      }
+
+      #btnMensaje{
+
+        background-image: url("../sidebar/assets/menunav/mensaje.png");
+        background-size: 18px;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-color: transparent;
+       /*separar icono del contenedor*/
+       cursor: pointer;
+       margin-left: 16px;
+        
+    
+          
+        }
+        #btnNoti{
+
+          background-image: url("../sidebar/assets/menunav/noti.png");
+          background-size: 18px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: transparent;
+         /*separar icono del contenedor*/
+         cursor: pointer;
+         margin-left: 16px;
+      
+            
+          }
+          #btnConfig{
+
+            background-image: url("../sidebar/assets/menunav/config.png");
+            background-size: 18px;
+              background-repeat: no-repeat;
+              background-position: center;
+              background-color: transparent;
+           /*separar icono del contenedor*/
+           cursor: pointer;
+           margin-left:  16px;
+        
+              
+            }
+
+            #btnHelp{
+
+              background-image: url("../sidebar/assets/menunav/help.png");
+                background-size: 15px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-color: transparent;
+             /*separar icono del contenedor*/
+             cursor: pointer;
+              
+             margin-left:  16px;
+                
+              }
+
+              .contenedor-ultimos-iconos{
+                display: inline-flex;
+                position:absolute; /* centra el contenido en la parte derecha de la pantalla */
+                right: 0;
+                margin-right: 10px;
+                margin-top: 10px;
+              }
