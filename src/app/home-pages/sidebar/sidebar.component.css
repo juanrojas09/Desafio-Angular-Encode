@@ -4,6 +4,31 @@
 }
 p{
   color:white;
+ 
+  padding: 10px;
+  
+  margin: 10px;
+  
+ 
+   border-radius: 5px;
+ 
+  background-color: rgb(35, 113, 113);
+  
+  text-align: center;
+  
+  font-size: 15px;
+  
+  font-style: normal;
+ 
+ 
+ 
+  text-decoration: none;
+  
+  text-transform: uppercase;
+ 
+}
+ #rol{
+  color: rgb(21, 228, 228);
 }
 
   
@@ -16,7 +41,7 @@ p{
   
     background-color: rgb(35, 113, 113);
     width: 100%;
-    height: 30px;
+    height: 80px;
     
 }
 .item-group .item{
@@ -24,14 +49,23 @@ p{
   font-style: normal;
   color: white;
   text-decoration: none;
+  padding: 10px;
  
  
 }
 .item-group .item:hover{
   color: white;
-  background-color: rgb(35, 113, 113);
+  background-color: rgb(43, 160, 160);
+  transition: 1s;
   cursor:pointer;
-  
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: center;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: uppercase;
  
 }
 
@@ -39,6 +73,7 @@ p{
 
 .mat-sidenav-content{
   background-color: white;
+  
 }  
 
 
@@ -46,6 +81,7 @@ p{
 .mat-sidenav-container{
     background-color: rgb(30, 114, 114);
     height: calc(205vh - 115vh);
+    
 }
 .mat-sidenav{
     background-color: rgb(17, 94, 94);
@@ -60,7 +96,12 @@ p{
   
   overflow: hidden;
   margin: 40px;
-  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+ padding: auto;
+ 
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
   transition: 400ms;
 }
 
@@ -83,7 +124,86 @@ p{
   background-repeat: no-repeat;
   background-position: center;
 }
+#logo{
+  background-image: url("../sidebar/assets/logo-bddo.png");
+ background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid rgb(30, 114, 114);
+  cursor: pointer;
+ 
+}
 
+#btnOpen{
 
+background-image: url("../sidebar/assets/sidebarempleado/menu.png");
+ background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+ 
+  margin-left: 160px;
+ 
+  cursor: pointer;
+}
+
+#btnEmpresa{
+
+  background-image: url("../sidebar/assets/menunav/empresa.png");
+   background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+   
+    margin-left: 50px;
+   
+    cursor: pointer;
+  }
+
+  #btnAplicaciones{
+
+    background-image: url("../sidebar/assets/menunav/aplicaciones.png");
+     background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: transparent;
+      margin-left: 50px;
+      
+    }
+    
+  #btnSelect{
+
+    background-image: url("../sidebar/assets/menunav/select.png");
+      background-size: 13px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: transparent;
+   /*separar icono del contenedor*/
+   cursor: pointer;
+    
+
+      
+    }
+    .contenedor{
+      color:white;
+      background-color: rgb(35, 151, 151);
+      border-radius: 10px;
+      display: inline-flex;
+      height: 50px;
+      width: 18rem;
+      
+    }
+    .texto{
+      background-color: rgb(35, 151, 151);
+      
+      text-decoration: none;
+      color: white;
+      display: inline-flex;
+      margin-left: 10px;
+      margin-top: 10px;
+      font-style: normal;
+      
+    }
+   
 
 

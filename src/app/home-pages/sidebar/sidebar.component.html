@@ -34,19 +34,41 @@
 
 <mat-toolbar class="navbar">
   <mat-toolbar-row>
-    <button mat-button (click)="opened=!opened"><mat-icon>menu
-    </mat-icon></button>
+  <a id="logo"   ><mat-icon>
+  </mat-icon></a>
+
+    <a mat-button id="btnOpen" (click)="opened=!opened"><mat-icon>
+    </mat-icon></a>
       
+    <a mat-button id="btnEmpresa" ><mat-icon>
+    </mat-icon></a>
+    <p class="item">Encode S.A</p>
+
+    <div class="contenedor" >
+        
+    <a id="btnAplicaciones" mat-button><mat-icon>
+    </mat-icon></a>
+    <a class="texto">Mis Aplicaciones</a>
+    <a id="btnSelect" mat-button><mat-icon>
+    </mat-icon></a>
+
+   
+
+
+   
+  </div>
+ 
   </mat-toolbar-row>
 </mat-toolbar>
 
 <mat-sidenav-container>
-  <mat-sidenav [(opened)]="opened" mode="side">
+
+  <mat-sidenav  [(opened)]="opened" mode="side">
     <div class="contenedor-imagen">
       <img  alt="" class="imagen">
     </div>
     <p>Mariano Lopez</p>
-    <p  *ngFor="let nav of dataRol" (click)="getNameRol()">{{nav.rol}}</p>
+    <p id="rol" *ngFor="let nav of dataRol" (click)="getNameRol()">{{nav.rol}}</p>
     
     <hr>
     <div class="item-group">
@@ -54,7 +76,7 @@
       
      
     <p class="item" style="color: white;" mat-list-item routerLink="nav.route"  *ngFor="let nav of dataOpction" (click)="redirect(nav.name)" >
-      <img id="imag"   width="24" height="24" />
+      <!--<img id="imag"   width="24" height="24" /> -->
      {{nav.name}}
     </p>
     
