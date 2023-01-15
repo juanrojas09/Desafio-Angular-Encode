@@ -9,7 +9,7 @@ export class DataService {
   datosEmployee:DataImterface[]=[
     {name:"Dashboard",route:"",icon:"../sidebar/assets/sidebarrrhh/dashboard.png"},
     {name:"Bandeja de documentos",route:"",icon:"bandeja"},
-    {name:"certificados",route:"",icon:"certificados"},
+    {name:"Certificados",route:"",icon:"certificados"},
     {name:"Permisos/licencias",route:"",icon:"permisos"},
     {name:"Registrar Asistencia",route:"",icon:"asistencia"},
     

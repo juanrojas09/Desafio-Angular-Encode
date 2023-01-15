@@ -1,4 +1,4 @@
-import {ChangeDetectorRef, Component, OnDestroy, OnInit} from '@angular/core';
+import {ChangeDetectorRef, Component,Renderer2, ElementRef, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import { Router } from '@angular/router';
 import { Data } from 'src/app/data/data';
 import { DataService } from 'src/app/data/data.service';
@@ -28,7 +28,7 @@ export class SidebarComponent implements OnInit {
     dataOpction: DataImterface[] = []
     dataRol:RoleInterface[]=[{
       rol:this.getNameRol()}];
-    constructor(private datos:DataService,private role:RoleDataService,private router:Router) {
+    constructor(private datos:DataService,private role:RoleDataService,private router:Router, private rendered:Renderer2) {
       
      
       
@@ -42,6 +42,8 @@ export class SidebarComponent implements OnInit {
       
     }
   ngOnInit(): void {
+    this.detectEventSidebar();
+    console.log(this.detectEventSidebar())
 
     //aca tengo que hacer un switch que verifique que rol es y de ahi retornar los datos que correspondan
 var rol=this.role.getData();
@@ -73,12 +75,62 @@ console.log(rol)
    redirect(route:string){
    switch(route){
       case "Dashboard":
-      this.router.navigate(['/dashboard']);
+     // this.router.navigate(['/dashboard']);
+      localStorage.setItem("route","dashboard");
       console.log("dashboard")
       break;
+      case "Bandeja de documentos":
+      //this.router.navigate(['/bandeja']);
+      localStorage.setItem("route","bandeja");
+      console.log("bandeja")
+      break;
+      case "Empleados":
+      this.router.navigate(['/empleados']);
+      break;
+      case "Vacantes":
+      this.router.navigate(['/vacantes']);
+      break;
+      case "Descargas":
+      this.router.navigate(['/descargas']);
+      break;
+
+      
+      
    }
   }
+
+  redirectLogout(){
+    this.router.navigate(['/login'])
+        
+  }
+
+
+  @ViewChild('component') component!: ElementRef;
+ 
+  detectEventSidebar(){
+  var event=localStorage.getItem("route");
+  switch (event) {
+  case "dashboard":
+    //return de un eemento html que renderize el componente del dashboard
+ const dashboard= document.getElementById("content");
+ console.log(dashboard)
+ this.rendered.setValue(dashboard,"<app-dashboard></app-dashboard>");
+ 
+   return true ;
+  }
+  return false;
+  }
   
+
     shouldRun = true;
   
 }
+
+
+/**
+ * en mat side nav content deberia hacer un metodo que devuelva true o false
+ * dependiendo el evento, si detecta el evento click en dashboard
+ * en la etiqueta de mat-sidenav renderize el componente del dashboard
+ * 
+ * 
+ */

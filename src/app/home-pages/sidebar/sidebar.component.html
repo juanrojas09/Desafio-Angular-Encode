@@ -49,6 +49,7 @@
     <a id="btnAplicaciones" mat-button><mat-icon>
     </mat-icon></a>
     <a class="texto">Mis Aplicaciones</a>
+    
     <a id="btnSelect" mat-button><mat-icon>
     </mat-icon></a>
 
@@ -67,7 +68,7 @@
     <a id="btnMensaje" mat-button><mat-icon>
     </mat-icon></a>
 
-    <a id="btnLogout" mat-button><mat-icon>
+    <a id="btnLogout" mat-button (click)="redirectLogout()"><mat-icon>
     </mat-icon></a>
 
   
@@ -101,8 +102,8 @@
     
   </div>
   </mat-sidenav>
-  <mat-sidenav-content>
-  <h1 >dashboard</h1>
- 
+  <mat-sidenav-content #component id="content"  >
+  <h1   *ngIf="detectEventSidebar" ></h1>
+  
   </mat-sidenav-content>
-</mat-sidenav-container>
+  </mat-sidenav-container>
