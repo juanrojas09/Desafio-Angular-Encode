@@ -11,10 +11,10 @@ p{
   
  
    border-radius: 5px;
- 
-  background-color: rgb(35, 113, 113);
+ display: flex;
+ justify-content: start;
   
-  text-align: center;
+  margin-left: 10px;
   
   font-size: 15px;
   
@@ -50,19 +50,19 @@ p{
   color: white;
   text-decoration: none;
   padding: 10px;
+    
+  margin-right: 10px;
  
  
 }
 .item-group .item:hover{
   color: white;
-  background-color: rgb(43, 160, 160);
+  background-color: rgb(35, 151, 151);
   transition: 1s;
   cursor:pointer;
-  padding: 10px;
-  margin: 10px;
-  border: 1px solid white;
-  border-radius: 5px;
-  text-align: center;
+  
+ 
+  
   font-style: normal;
   text-decoration: none;
   text-transform: uppercase;
@@ -155,9 +155,8 @@ background-image: url("../sidebar/assets/sidebarempleado/menu.png");
  width: 30px;
 }
 #btnOpen:hover{
-  background-color: rgb(21, 135, 135);
+background-color: rgb(21, 135, 135);
 transition: 0.3s;
-
 border-radius: 5px;
 
 }
@@ -174,7 +173,16 @@ border-radius: 5px;
    
     cursor: pointer;
   }
-
+  .content {
+    height: calc(100vh - 130px);
+    border-radius: 10px;
+    margin: 16px;
+    margin-left: 32px;
+  
+    padding: 16px;
+  
+    overflow: auto;
+  }
   #btnAplicaciones{
 
     background-image: url("../sidebar/assets/menunav/aplicaciones.png");
@@ -210,7 +218,7 @@ border-radius: 5px;
     }
     .texto{
       background-color: rgb(35, 151, 151);
-      
+      font-size: 15px;
       text-decoration: none;
       color: white;
       display: inline-flex;
@@ -224,76 +232,127 @@ border-radius: 5px;
     #btnLogout{
 
       background-image: url("../sidebar/assets/menunav/logout.png");
-      background-size: 18px;
+      background-size: 15px;
         background-repeat: no-repeat;
         background-position: center;
         background-color: transparent;
      /*separar icono del contenedor*/
      cursor: pointer;
+     border-radius: 50%;
+             border:1px white solid;
      margin-left: 10px;
   
         
       }
+      #btnLogout:hover{
+        background-color: rgb(21, 135, 135);
+        transition: 0.3s;
+
+        
+    
+          
+        }
 
       #btnMensaje{
 
         background-image: url("../sidebar/assets/menunav/mensaje.png");
-        background-size: 18px;
+        background-size: 15px;
           background-repeat: no-repeat;
           background-position: center;
           background-color: transparent;
        /*separar icono del contenedor*/
        cursor: pointer;
+       border-radius: 50%;
+             border:1px white solid;
        margin-left: 16px;
         
     
           
         }
+        #btnMensaje:hover{
+          background-color: rgb(21, 135, 135);
+          transition: 0.3s;
+  
+          
+      
+            
+          }
         #btnNoti{
 
           background-image: url("../sidebar/assets/menunav/noti.png");
-          background-size: 18px;
+          background-size: 15px;
             background-repeat: no-repeat;
             background-position: center;
             background-color: transparent;
          /*separar icono del contenedor*/
          cursor: pointer;
+         border-radius: 50%;
+             border:1px white solid;
          margin-left: 16px;
       
             
           }
+          #btnNoti:hover{
+            background-color: rgb(21, 135, 135);
+            transition: 0.3s;
+    
+            
+        
+              
+            }
           #btnConfig{
 
             background-image: url("../sidebar/assets/menunav/config.png");
-            background-size: 18px;
+            background-size: 15px;
               background-repeat: no-repeat;
               background-position: center;
               background-color: transparent;
            /*separar icono del contenedor*/
            cursor: pointer;
+           border-radius: 50%;
+             border:1px white solid;
            margin-left:  16px;
         
               
             }
+            #btnConfig:hover{
+              background-color: rgb(21, 135, 135);
+              transition: 0.3s;
+      
+              
+          
+                
+              }
 
             #btnHelp{
 
               background-image: url("../sidebar/assets/menunav/help.png");
-                background-size: 15px;
+                background-size: 10px;
                 background-repeat: no-repeat;
                 background-position: center;
                 background-color: transparent;
              /*separar icono del contenedor*/
              cursor: pointer;
+             border-radius: 50%;
+             border:1px white solid;
               
              margin-left:  16px;
                 
               }
+              #btnHelp:hover{
+                background-color: rgb(21, 135, 135);
+                transition: 0.3s;
+        
+                
+            
+                  
+                }
 
               .contenedor-ultimos-iconos{
                 display: inline-flex;
                 position:absolute; /* centra el contenido en la parte derecha de la pantalla */
                 right: 0;
-                margin-right: 10px;
+                margin-right: 20px;
                 margin-top: 10px;
               }
+              

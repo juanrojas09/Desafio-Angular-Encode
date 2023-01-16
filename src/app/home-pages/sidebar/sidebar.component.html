@@ -1,6 +1,6 @@
 
 
-<mat-toolbar class="navbar">
+<mat-toolbar class="navbar mat-elevation-z8"  >
   <mat-toolbar-row>
     <div class="logoContainer">
   <a id="logo" ><mat-icon>
@@ -66,22 +66,26 @@
     <div class="item-group">
       
       
-     <div *ngFor="let nav of dataOpction">
+     <div *ngFor="let nav of dataOpction" style="display:inline-flex; justify-content: center; align-items: center;">
 
-       <p class="item" style="color: white;" mat-list-item routerLink="nav.route"   (click)="redirect(nav.name)" >
-        <img   src="{{nav.icon}}"  width="24" height="24" />
+       <img   src="{{nav.icon}}"  width="24" height="24" style="margin-left:10px " />
+       <p class="item" style="color: white; " mat-list-item routerLink="nav.route"   (click)="redirect(nav.name)" >
         {{nav.name}}
       </p>
+
+      
     </div>
-    
+   <p>Powered by <span class="titulo" style="color:rgb(0, 191, 255)">EN<span style="color:rgb(255, 255, 255)">CODE</span> </span></p>
   </div>
   </mat-sidenav>
   <mat-sidenav-content>
+    <div class="content">
     <h1  #component id="content" *ngIf="retVal==1"  ><app-dashboard></app-dashboard></h1>
     <h1  #component id="content" *ngIf="retVal==2"  ><app-bandeja-doc></app-bandeja-doc></h1>
     <h1  #component id="content" *ngIf="retVal==3"  ><app-empleados></app-empleados></h1>
     <h1  #component id="content" *ngIf="retVal==4"  ><app-vacantes></app-vacantes></h1>
     <h1  #component id="content" *ngIf="retVal==5"  ><app-descargas></app-descargas></h1>
+    </div>
    
   </mat-sidenav-content>
   </mat-sidenav-container>
