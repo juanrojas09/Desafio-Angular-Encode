@@ -1,36 +1,4 @@
-<!--sidebar-->
-<!--
-<div class="sidebar">
-    
-  </div>
-  -->
-<!--
-  <div class="example-container" *ngIf="shouldRun">
-    <mat-toolbar color="primary" class="example-toolbar">
 
-      <button mat-icon-button class="btn" (click)="snav.toggle()">
-        <mat-icon >menu</mat-icon></button>
-      
-    </mat-toolbar>
-        
-    
-    <mat-sidenav-container class="example-sidenav-container">
-      <mat-sidenav #snav 
-                    fixedTopGap="56" class="sidebar">
-        <mat-nav-list >
-            <mat-icon></mat-icon>
-          <a mat-list-item routerLink="nav.route" *ngFor="let nav of fillerNav" >{{nav.name}}</a>
-        </mat-nav-list>
-      </mat-sidenav>
-  
-      <mat-sidenav-content>
-       <!-- <p *ngFor="let content of fillerContent">{{content}}</p>-->
-     <!-- </mat-sidenav-content>
-    </mat-sidenav-container>
-  </div>
-  
--->
- 
 
 <mat-toolbar class="navbar">
   <mat-toolbar-row>
@@ -39,8 +7,10 @@
 
   </mat-icon></a>
 </div>
+<div class="contenedor-open">
     <a mat-button id="btnOpen" (click)="opened=!opened"><mat-icon>
     </mat-icon></a>
+    </div> 
       
     <a mat-button id="btnEmpresa" ><mat-icon>
     </mat-icon></a>
@@ -96,17 +66,22 @@
     <div class="item-group">
       
       
-     
-    <p class="item" style="color: white;" mat-list-item routerLink="nav.route"  *ngFor="let nav of dataOpction" (click)="redirect(nav.name)" >
-      <!--<img id="imag"   width="24" height="24" /> -->
-     {{nav.name}}
-    </p>
+     <div *ngFor="let nav of dataOpction">
+
+       <p class="item" style="color: white;" mat-list-item routerLink="nav.route"   (click)="redirect(nav.name)" >
+        <img   src="{{nav.icon}}"  width="24" height="24" />
+        {{nav.name}}
+      </p>
+    </div>
     
   </div>
   </mat-sidenav>
   <mat-sidenav-content>
     <h1  #component id="content" *ngIf="retVal==1"  ><app-dashboard></app-dashboard></h1>
-  <h1  #component id="content" *ngIf="retVal==2"  ><app-bandeja-doc></app-bandeja-doc></h1>
- 
+    <h1  #component id="content" *ngIf="retVal==2"  ><app-bandeja-doc></app-bandeja-doc></h1>
+    <h1  #component id="content" *ngIf="retVal==3"  ><app-empleados></app-empleados></h1>
+    <h1  #component id="content" *ngIf="retVal==4"  ><app-vacantes></app-vacantes></h1>
+    <h1  #component id="content" *ngIf="retVal==5"  ><app-descargas></app-descargas></h1>
+   
   </mat-sidenav-content>
   </mat-sidenav-container>

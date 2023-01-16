@@ -51,25 +51,37 @@ export class SidebarComponent implements OnInit {
     //aca tengo que hacer un switch que verifique que rol es y de ahi retornar los datos que correspondan
 var rol=this.role.getData();
 this.getNameRol();
-    
+
+
 console.log(rol)
   
  
     switch (rol) {
       case "Empleado":
+
       this.dataOpction=this.datos.getData(1);
+    
         break;
       case "Seguridad":
+        
       this.dataOpction=this.datos.getData(3);
+      
         break;
       case "Administrador":
-      this.dataOpction=this.datos.getData(2);
+        
+      this.dataOpction=this.datos.getData(4);
+      
         break;
         case "RRHH":
+         
       this.dataOpction=this.datos.getData(2);
+      
         break;
      
     }
+    //console.log("rol",rol)
+    rol=" "
+    //console.log("rol limpio?",rol)
     console.log(this.dataOpction)
 
   }
@@ -80,6 +92,7 @@ console.log(rol)
     this.detectEventSidebar();
     console.log(this.detectEventSidebar())
    switch(route){
+    //RRHH
       case "Dashboard":
      // this.router.navigate(['/dashboard']);
       localStorage.setItem("route","dashboard");
@@ -93,15 +106,19 @@ console.log(rol)
       console.log("bandeja")
       break;
       case "Empleados":
-      this.router.navigate(['/empleados']);
+        this.retVal=3;
+     // this.router.navigate(['/empleados']);
       break;
       case "Vacantes":
-      this.router.navigate(['/vacantes']);
+        this.retVal=4;
+    //  this.router.navigate(['/vacantes']);
       break;
       case "Descargas":
-      this.router.navigate(['/descargas']);
+        this.retVal=5;
+   //   this.router.navigate(['/descargas']);
       break;
-
+//-------------------------------------------------
+//Empleado
       
       
    }
@@ -110,6 +127,7 @@ console.log(rol)
 
   redirectLogout(){
     this.router.navigate(['/login'])
+    
     
         
   }
@@ -120,9 +138,10 @@ console.log(rol)
 
 
   /**
- * en mat side nav content deberia hacer un metodo que devuelva true o false
- * dependiendo el evento, si detecta el evento click en dashboard
- * en la etiqueta de mat-sidenav renderize el componente del dashboard
+ * switch, me llega el item q esta en el local storage y dependiendo de eso me retorna el valor
+ * que le voy a asignar al componente que esta en el sidebar para que se renderize en el html
+ * use una flag, que es el retval, para que cuando se ejecute el switch, me retorne el valor de la flag
+ * y asi poder asignarle el valor al componente que esta en el sidebar y asi poder renderizarlo en el html 
  * 
  * 
  */
@@ -140,7 +159,7 @@ case "dashboard":
     
   
 case "bandeja":
-   this.value=" <app-bandeja-doc></app-bandeja-doc>";
+   this.value="<app-bandeja-doc></app-bandeja-doc>";
     // const bandeja= this.component.nativeElement;
     //console.log("bandeja",bandeja)
     console.log(this.retVal)

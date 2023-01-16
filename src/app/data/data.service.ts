@@ -7,34 +7,34 @@ import { DataImterface } from './dataInterfaces';
 export class DataService {
 
   datosEmployee:DataImterface[]=[
-    {name:"Dashboard",route:"",icon:"../sidebar/assets/sidebarrrhh/dashboard.png"},
-    {name:"Bandeja de documentos",route:"",icon:"bandeja"},
-    {name:"Certificados",route:"",icon:"certificados"},
-    {name:"Permisos/licencias",route:"",icon:"permisos"},
-    {name:"Registrar Asistencia",route:"",icon:"asistencia"},
+    {name:"Dashboard",route:"",icon:"../../../assets/sidebar empleado/dashboard.png"},
+    {name:"Bandeja de documentos",route:"",icon:"../../../assets/sidebar empleado/bandeja-doc.png"},
+    {name:"Certificados",route:"",icon:"../../../assets/sidebar empleado/cert.png"},
+    {name:"Permisos/licencias",route:"",icon:"../../../assets/sidebar empleado/permisos.png"},
+    {name:"Registrar Asistencia",route:"",icon:"../../../assets/sidebar empleado/asistencias.png"},
     
   ]
   datosRRHH:DataImterface[]=[
-    {name:"Dashboard",route:"",icon:"../sidebar/assets/sidebarrrhh/dashboard.png"},
-    {name:"Bandeja de documentos",route:"",icon:"bandeja"},
-    {name:"Empleados",route:"",icon:"empleados"},
-    {name:"Vacantes",route:"",icon:"vacantes"},
-    {name:"Descargas",route:"",icon:"descargas"},
+    {name:"Dashboard",route:"",icon:"../../../assets/sidebar rrhh/dashboard.png"},
+    {name:"Bandeja de documentos",route:"",icon:"../../../assets/sidebar rrhh/bandeja-doc.png"},
+    {name:"Empleados",route:"",icon:"../../../assets/sidebar rrhh/empleados.png"},
+    {name:"Vacantes",route:"",icon:"../../../assets/sidebar rrhh/vacantes.png"},
+    {name:"Descargas",route:"",icon:"../../../assets/sidebar rrhh/descargas.png"},
   ]
 
   datosSeguridad:DataImterface[]=[
-    {name:"Dashboard",route:"",icon:"dashboard"},
-  {name:"Seguridad de empleados",route:"",icon:"seguridad"},
-  {name:"Politicas de seguridad",route:"",icon:"politicas"},
-  {name:"Auditorias",route:"",icon:"auditorias"},
+    {name:"Dashboard",route:"",icon:"../../../assets/sidebar seguridad/dashboard.png"},
+  {name:"Seguridad de empleados",route:"",icon:"../../../assets/sidebar seguridad/seguridad.png"},
+  {name:"Politicas de seguridad",route:"",icon:"../../../assets/sidebar seguridad/politicas.png"},
+  {name:"Auditorias",route:"",icon:"../../../assets/sidebar seguridad/auditorias.png"},
   ]
 
   datosAdmin:DataImterface[]=[
-    {name:"Dashboard",route:"",icon:"dashboard"},
-    {name:"Empresa",route:"",icon:"empresa"},
-    {name:"Solicitudes",route:"",icon:"solicitudes"},
-    {name:"Sucursales",route:"",icon:"sucursales"},
-    {name:"Definicion de documentos",route:"",icon:"definicion"},
+    {name:"Dashboard",route:"",icon:"../../../assets/sidebar admin/dashboard.png"},
+    {name:"Empresa",route:"",icon:"../../../assets/sidebar admin/empresa.png"},
+    {name:"Solicitudes",route:"",icon:"../../../assets/sidebar admin/solicitudes.png"},
+    {name:"Sucursales",route:"",icon:"../../../assets/sidebar admin/sucursales.png"},
+    {name:"Definicion de documentos",route:"",icon:"../../../assets/sidebar admin/documentos.png"},
 
   ]
   constructor() { }

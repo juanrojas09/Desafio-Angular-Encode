@@ -33,15 +33,19 @@ export class RolesComponent {
     console.log(this.roles.dataRol)
     switch (rol) {
       case "Empleado":
+        localStorage.setItem("rol","Empleado")
       this.router.navigate(['/empleado']);
         break;
         case "RRHH":
+        localStorage.setItem("rol","RRHH")
         this.router.navigate(['/RRHH']);
         break;
       case "Seguridad":
+        localStorage.setItem("rol","Seguridad")
       this.router.navigate(['/seguridad']);
         break;
       case "Administrador":
+        localStorage.setItem("rol","Administrador")
       this.router.navigate(['/administracion']);
         break;
 

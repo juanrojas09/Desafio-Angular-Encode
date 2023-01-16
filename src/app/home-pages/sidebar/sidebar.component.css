@@ -140,6 +140,9 @@ p{
  
 }
 
+
+
+
 #btnOpen{
 
 background-image: url("../sidebar/assets/sidebarempleado/menu.png");
@@ -149,6 +152,14 @@ background-image: url("../sidebar/assets/sidebarempleado/menu.png");
   background-color: transparent;
  margin-left: 160px;
  cursor: pointer;
+ width: 30px;
+}
+#btnOpen:hover{
+  background-color: rgb(21, 135, 135);
+transition: 0.3s;
+
+border-radius: 5px;
+
 }
 
 #btnEmpresa{

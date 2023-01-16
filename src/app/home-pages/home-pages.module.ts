@@ -12,7 +12,11 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
 import { DashboardComponent } from './Items-sidenav/dashboard/dashboard.component';
-import { BandejaDocComponent } from './items-sidenav/bandeja-doc/bandeja-doc.component';
+import { BandejaDocComponent } from './Items-sidenav/bandeja-doc/bandeja-doc.component';
+import { EmpleadosComponent } from './Items-sidenav/empleados/empleados.component';
+import { DescargasComponent } from './Items-sidenav/descargas/descargas.component';
+import { VacantesComponent } from './Items-sidenav/vacantes/vacantes.component';
+
 
 
 @NgModule({
@@ -24,6 +28,11 @@ import { BandejaDocComponent } from './items-sidenav/bandeja-doc/bandeja-doc.com
     SidebarComponent,
     DashboardComponent,
     BandejaDocComponent,
+    EmpleadosComponent,
+    DescargasComponent,
+    VacantesComponent
+
+    
   
     
 

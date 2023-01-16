@@ -14,8 +14,11 @@ dataRol:RoleInterface[]=[
    }
 
   getData(){
-    return localStorage.getItem("rol");
-    console.log(this.dataRol)
+    var rol= localStorage.getItem("rol");
+   
+    return rol;
+    
+    
   }
 
    setData(rol:string){
