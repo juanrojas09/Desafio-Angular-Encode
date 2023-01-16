@@ -15,8 +15,19 @@ export class LoginComponent {
     
     
   }
+
+  ngOninit(){
+   this.reload();
+  }
+  reload(){
+    for(var i=0;i<1;i++){
+      window.location.reload();
+    }
+  }
   redirect(){
+    
     this.router.navigate(['/roles']);
+    
   }
 onSubmit() {
 throw new Error('Method not implemented.');

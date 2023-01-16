@@ -134,8 +134,9 @@ p{
  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  border: 1px solid rgb(30, 114, 114);
+  
   cursor: pointer;
+  
  
 }
 

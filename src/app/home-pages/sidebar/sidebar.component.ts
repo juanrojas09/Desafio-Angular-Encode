@@ -28,6 +28,10 @@ export class SidebarComponent implements OnInit {
     dataOpction: DataImterface[] = []
     dataRol:RoleInterface[]=[{
       rol:this.getNameRol()}];
+
+
+      @ViewChild('component') component!: ElementRef;
+
     constructor(private datos:DataService,private role:RoleDataService,private router:Router, private rendered:Renderer2) {
       
      
@@ -42,8 +46,7 @@ export class SidebarComponent implements OnInit {
       
     }
   ngOnInit(): void {
-    this.detectEventSidebar();
-    console.log(this.detectEventSidebar())
+   
 
     //aca tengo que hacer un switch que verifique que rol es y de ahi retornar los datos que correspondan
 var rol=this.role.getData();
@@ -71,17 +74,22 @@ console.log(rol)
 
   }
 
-  
+  public retVal:number=0;
    redirect(route:string){
+    
+    this.detectEventSidebar();
+    console.log(this.detectEventSidebar())
    switch(route){
       case "Dashboard":
      // this.router.navigate(['/dashboard']);
       localStorage.setItem("route","dashboard");
+      this.retVal=1;
       console.log("dashboard")
       break;
       case "Bandeja de documentos":
       //this.router.navigate(['/bandeja']);
       localStorage.setItem("route","bandeja");
+      this.retVal=2;
       console.log("bandeja")
       break;
       case "Empleados":
@@ -97,28 +105,52 @@ console.log(rol)
       
       
    }
+ 
   }
 
   redirectLogout(){
     this.router.navigate(['/login'])
+    
         
   }
 
 
-  @ViewChild('component') component!: ElementRef;
+  public value:string='';
  
+
+
+  /**
+ * en mat side nav content deberia hacer un metodo que devuelva true o false
+ * dependiendo el evento, si detecta el evento click en dashboard
+ * en la etiqueta de mat-sidenav renderize el componente del dashboard
+ * 
+ * 
+ */
   detectEventSidebar(){
+    
   var event=localStorage.getItem("route");
   switch (event) {
-  case "dashboard":
-    //return de un eemento html que renderize el componente del dashboard
- const dashboard= document.getElementById("content");
- console.log(dashboard)
- this.rendered.setValue(dashboard,"<app-dashboard></app-dashboard>");
+case "dashboard":
+    this.value="<app-dashboard></app-dashboard>";  
+    //const dashboard= this.component.nativeElement;
+    //console.log("das",dashboard)
+    console.log(this.retVal)
+    //var hola=this.rendered.setAttribute(dashboard,"value","<app-dashboard></app-dashboard>");
+    break;
+    
+  
+case "bandeja":
+   this.value=" <app-bandeja-doc></app-bandeja-doc>";
+    // const bandeja= this.component.nativeElement;
+    //console.log("bandeja",bandeja)
+    console.log(this.retVal)
+    //var hola=this.rendered.setAttribute(bandeja,"value","<app-bandeja></app-bandeja>");
+    break;
+  
  
-   return true ;
+   
   }
-  return false;
+ 
   }
   
 
@@ -127,10 +159,4 @@ console.log(rol)
 }
 
 
-/**
- * en mat side nav content deberia hacer un metodo que devuelva true o false
- * dependiendo el evento, si detecta el evento click en dashboard
- * en la etiqueta de mat-sidenav renderize el componente del dashboard
- * 
- * 
- */
+

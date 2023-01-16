@@ -11,7 +11,8 @@ import {MatListModule} from '@angular/material/list';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashboardComponent } from './Items-sidenav/dashboard/dashboard.component';
+import { BandejaDocComponent } from './items-sidenav/bandeja-doc/bandeja-doc.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     AdministracionHomeComponent,
     SidebarComponent,
     DashboardComponent,
+    BandejaDocComponent,
   
     
 

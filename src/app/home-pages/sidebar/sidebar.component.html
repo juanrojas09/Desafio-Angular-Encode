@@ -34,9 +34,11 @@
 
 <mat-toolbar class="navbar">
   <mat-toolbar-row>
-  <a id="logo"   ><mat-icon>
-  </mat-icon></a>
+    <div class="logoContainer">
+  <a id="logo" ><mat-icon>
 
+  </mat-icon></a>
+</div>
     <a mat-button id="btnOpen" (click)="opened=!opened"><mat-icon>
     </mat-icon></a>
       
@@ -102,8 +104,9 @@
     
   </div>
   </mat-sidenav>
-  <mat-sidenav-content #component id="content"  >
-  <h1   *ngIf="detectEventSidebar" ></h1>
-  
+  <mat-sidenav-content>
+    <h1  #component id="content" *ngIf="retVal==1"  ><app-dashboard></app-dashboard></h1>
+  <h1  #component id="content" *ngIf="retVal==2"  ><app-bandeja-doc></app-bandeja-doc></h1>
+ 
   </mat-sidenav-content>
   </mat-sidenav-container>
