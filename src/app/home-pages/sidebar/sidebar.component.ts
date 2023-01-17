@@ -160,6 +160,19 @@ console.log(rol)
       case "Auditorias":
         this.retVal=15;
       break;
+      case "Empresa":
+        this.retVal=16;
+      break;
+      case "Solicitudes":
+        this.retVal=17;
+      break;
+      case "Sucursales":
+        this.retVal=18;
+      break;
+      case "Definicion de documentos":
+        this.retVal=19;
+      break;
+      
     
       
       
