@@ -88,16 +88,30 @@ console.log(rol)
 
   public retVal:number=0;
    redirect(route:string){
-    
+    var rol=this.role.getData();
     this.detectEventSidebar();
     console.log(this.detectEventSidebar())
    switch(route){
     //RRHH
       case "Dashboard":
-     // this.router.navigate(['/dashboard']);
-      localStorage.setItem("route","dashboard");
-      this.retVal=1;
-      console.log("dashboard")
+     switch(rol){
+        case "RRHH":
+          localStorage.setItem("route","dashboardRRHH");
+         this.retVal=1;
+          break;
+        case "Seguridad":
+          localStorage.setItem("route","dashboardSeguridad");
+         this.retVal=6;
+          break;
+        case "Administrador":
+          localStorage.setItem("route","dashboardAdmin");
+          this.retVal=7;
+          break;
+        case "Empleado":
+          localStorage.setItem("route","dashboardEmpleado");
+          this.retVal=8;
+          break;
+     }
       break;
       case "Bandeja de documentos":
       //this.router.navigate(['/bandeja']);

@@ -5,12 +5,26 @@
         </div>
     
 <div class="container2">
-    <form  (ngSubmit)="onSubmit()">
+    <form [formGroup]="myform" (ngSubmit)="saveData()" novalidate>
         <label class="form-label"  for="login" style="font-size:x-large;font-weight: 800;">Log In</label>
-        <label class="form-label" style="font-weight: 800;"  for="username">Usuario</label>
-        <input class="form-control"  id="usuario" type="text" id="usuario" name="usuario"  placeholder="Ingresa su usuario"/>
+        <label class="form-label" style="font-weight: 800;"   for="username">Usuario</label>
+        <input class="form-control"  id="usuario" type="text" formControlName="usuario" id="usuario" required   placeholder="Ingresa su usuario"/>
+        
         <label class="form-label" style="font-weight: 800;"  for="password">Contraseña</label>
-        <input class="form-control" id="contraseña" type="password" id="contraseña" name="contraseña" placeholder="Ingresa su contraseña" />
+        <input class="form-control"   type="password" formControlName="contraseña" id="contraseña" required   placeholder="Ingresa su contraseña"/>
+        <p #valores>{{myform.value | json }}</p>
+        <p #estado>{{myform.status}}</p>
+        
+        <div *ngIf="myform.get('usuario')?.errors && myform.get('usuario')?.dirty">
+            <p ngIf="myform.get('usuario').hasError('required')">El campo es requerido</p>
+
+        </div>
+        <div *ngIf="myform.get('contraseña')?.errors && myform.get('password')?.dirty">
+            <p ngIf="myform.get('contraseña').hasError('required')">El campo es requerido</p>
+
+        </div>
+       
+
         <div class="form-check">
         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
        
@@ -27,10 +41,10 @@
     </div>
 
 
-        <a class="btn" value="Ingresar" routerLink="/roles" routerLinkActive="router-link-active" (click)="redirect()" >Ingresar</a>
+        <button class="btn" value="Ingresar" routerLink="/roles" type="submit" routerLinkActive="router-link-active"   >Ingresar</button>
         <div class="row2 ">
         <p id="txt">No tienes una cuenta?</p>
-        <a type="button" class="registro" value="Registrarte" href="#" >Registrate</a>
+        <a type="button" class="registro" value="Registrarte" (click)="registerRedirect()">Registrate</a>
         </div>
     </form>
     

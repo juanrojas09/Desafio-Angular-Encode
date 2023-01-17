@@ -60,9 +60,6 @@ p{
   background-color: rgb(35, 151, 151);
   transition: 1s;
   cursor:pointer;
-  
- 
-  
   font-style: normal;
   text-decoration: none;
   text-transform: uppercase;
@@ -232,15 +229,16 @@ border-radius: 5px;
     #btnLogout{
 
       background-image: url("../sidebar/assets/menunav/logout.png");
-      background-size: 15px;
+      background-size:20px;
         background-repeat: no-repeat;
         background-position: center;
         background-color: transparent;
      /*separar icono del contenedor*/
      cursor: pointer;
-     border-radius: 50%;
-             border:1px white solid;
-     margin-left: 10px;
+     border-radius: 25px;
+     
+      border:1px white solid;
+     margin-left: 16px;
   
         
       }
@@ -256,13 +254,13 @@ border-radius: 5px;
       #btnMensaje{
 
         background-image: url("../sidebar/assets/menunav/mensaje.png");
-        background-size: 15px;
+        background-size: 20px;
           background-repeat: no-repeat;
           background-position: center;
           background-color: transparent;
        /*separar icono del contenedor*/
        cursor: pointer;
-       border-radius: 50%;
+       border-radius: 25px;
              border:1px white solid;
        margin-left: 16px;
         
@@ -280,13 +278,14 @@ border-radius: 5px;
         #btnNoti{
 
           background-image: url("../sidebar/assets/menunav/noti.png");
-          background-size: 15px;
+          background-size: 20px;
             background-repeat: no-repeat;
             background-position: center;
             background-color: transparent;
          /*separar icono del contenedor*/
          cursor: pointer;
-         border-radius: 50%;
+         border-radius: 25px;
+         border-width: 30px;
              border:1px white solid;
          margin-left: 16px;
       
@@ -303,13 +302,14 @@ border-radius: 5px;
           #btnConfig{
 
             background-image: url("../sidebar/assets/menunav/config.png");
-            background-size: 15px;
+            background-size: 20px;
               background-repeat: no-repeat;
               background-position: center;
               background-color: transparent;
            /*separar icono del contenedor*/
            cursor: pointer;
-           border-radius: 50%;
+            border-radius: 25px;
+           
              border:1px white solid;
            margin-left:  16px;
         
@@ -327,13 +327,13 @@ border-radius: 5px;
             #btnHelp{
 
               background-image: url("../sidebar/assets/menunav/help.png");
-                background-size: 10px;
+                background-size: 14px;
                 background-repeat: no-repeat;
                 background-position: center;
                 background-color: transparent;
              /*separar icono del contenedor*/
              cursor: pointer;
-             border-radius: 50%;
+             border-radius: 25px;
              border:1px white solid;
               
              margin-left:  16px;

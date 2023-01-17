@@ -142,8 +142,8 @@ input{
   #Administracion:hover{
   transition: all 0.6s ease 0s;
   color: white;
-  background-color: rgb(35, 113, 113);
-  background-image: url('../roles/asset/admin.png');
+  background-color: rgb(47, 126, 150);
+  background-image: url('../../roles/roles/asset/login-elegir-rol/admin-white.png');
   background-size: 30px;
   background-repeat: no-repeat;
   background-position: left;
@@ -155,8 +155,8 @@ input{
   #Seguridad:hover{
   transition: all 0.6s ease 0s;
   color: white;
-  background-color: rgb(35, 113, 113);
-  background-image: url('../roles/asset/seguridad.png');
+  background-color: rgb(47, 126, 150);
+  background-image: url('../../roles/roles/asset/login-elegir-rol/seguridad-white.png');
   background-size: 30px;
   background-repeat: no-repeat;
   background-position: left;
@@ -168,8 +168,8 @@ input{
   #RRHH:hover{
   transition: all 0.6s ease 0s;
   color: white;
-  background-color: rgb(35, 113, 113);
-  background-image: url('../roles/asset/rrhh.png');
+  background-color: rgb(47, 126, 150);
+  background-image: url('../../roles/roles/asset/login-elegir-rol/rrhh-white.png');
   background-size: 30px;
   background-repeat: no-repeat;
   background-position: left;
@@ -181,8 +181,8 @@ input{
   #Empleado:hover{
   transition: all 0.6s ease 0s;
   color: white;
-  background-color: rgb(35, 113, 113);
-  background-image: url('../roles/asset/empleado.png');
+  background-color: rgb(47, 126, 150);
+  background-image: url('../../roles/roles/asset/login-elegir-rol/empleado-white.png');
   background-size: 30px;
   background-repeat: no-repeat;
   background-position: left;

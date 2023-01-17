@@ -75,7 +75,7 @@
 
       
     </div>
-   <p>Powered by <span class="titulo" style="color:rgb(0, 191, 255)">EN<span style="color:rgb(255, 255, 255)">CODE</span> </span></p>
+   <p>Powered by   <span class="titulo" style="color:rgb(0, 191, 255)">&nbsp;EN<span style="color:rgb(255, 255, 255)">CODE</span> </span></p>
   </div>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -85,7 +85,11 @@
     <h1  #component id="content" *ngIf="retVal==3"  ><app-empleados></app-empleados></h1>
     <h1  #component id="content" *ngIf="retVal==4"  ><app-vacantes></app-vacantes></h1>
     <h1  #component id="content" *ngIf="retVal==5"  ><app-descargas></app-descargas></h1>
-    </div>
+    <h1  #component id="content" *ngIf="retVal==6"  ><app-dashboard-seguridad></app-dashboard-seguridad></h1>
+    <h1  #component id="content" *ngIf="retVal==7"  ><app-dashboard-admin></app-dashboard-admin></h1>
+    <h1  #component id="content" *ngIf="retVal==8"  ><app-dashboard-empleado></app-dashboard-empleado></h1>
+    <h1  #component id="content" *ngIf="retVal==9"  ><app-descargas></app-descargas></h1>  
+  </div>
    
   </mat-sidenav-content>
   </mat-sidenav-container>

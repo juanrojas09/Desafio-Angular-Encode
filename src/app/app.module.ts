@@ -9,6 +9,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomePagesModule } from './home-pages/home-pages.module';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RegisterModule } from './register/register.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,12 @@ import {MatListModule} from '@angular/material/list';
     AppRoutingModule,
     HomePagesModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    FormsModule,
+    ReactiveFormsModule,
+    RegisterModule
+   
+   
     
     
   ],
