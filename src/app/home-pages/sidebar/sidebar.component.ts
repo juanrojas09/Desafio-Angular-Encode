@@ -114,25 +114,54 @@ console.log(rol)
      }
       break;
       case "Bandeja de documentos":
-      //this.router.navigate(['/bandeja']);
-      localStorage.setItem("route","bandeja");
-      this.retVal=2;
-      console.log("bandeja")
+      switch(rol){  
+        case "RRHH":
+          localStorage.setItem("route","bandejaRRHH");
+          this.retVal=2;
+          break;
+        case "Empleado":
+          localStorage.setItem("route","bandejaEmpleado");
+          this.retVal=9;
+          break;
+      }
+ 
+      
       break;
       case "Empleados":
         this.retVal=3;
-     // this.router.navigate(['/empleados']);
       break;
       case "Vacantes":
         this.retVal=4;
-    //  this.router.navigate(['/vacantes']);
       break;
       case "Descargas":
         this.retVal=5;
-   //   this.router.navigate(['/descargas']);
+   
       break;
 //-------------------------------------------------
 //Empleado
+      case "Certificados":
+        this.retVal=10;
+      
+      break;
+      case "Registrar Asistencia":
+        this.retVal=11;
+      break;
+      case "Permisos":
+        this.retVal=12;
+      break;
+
+      //Seguridad
+      case "Seguridad de empleados":
+        this.retVal=13;
+      break;
+      case "Politicas de seguridad":
+        this.retVal=14;
+      break;
+      case "Auditorias":
+        this.retVal=15;
+      break;
+    
+      
       
       
    }

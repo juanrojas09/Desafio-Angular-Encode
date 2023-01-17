@@ -10,7 +10,7 @@ export class DataService {
     {name:"Dashboard",route:"",icon:"../../../assets/sidebar empleado/dashboard.png"},
     {name:"Bandeja de documentos",route:"",icon:"../../../assets/sidebar empleado/bandeja-doc.png"},
     {name:"Certificados",route:"",icon:"../../../assets/sidebar empleado/cert.png"},
-    {name:"Permisos/licencias",route:"",icon:"../../../assets/sidebar empleado/permisos.png"},
+    {name:"Permisos",route:"",icon:"../../../assets/sidebar empleado/permisos.png"},
     {name:"Registrar Asistencia",route:"",icon:"../../../assets/sidebar empleado/asistencias.png"},
     
   ]

@@ -28,6 +28,9 @@ import { EmpresaComponent } from './Items-sidenav/ADMINISTRACION/empresa/empresa
 import { SolicitudesComponent } from './Items-sidenav/ADMINISTRACION/solicitudes/solicitudes.component';
 import { SucursalesComponent } from './Items-sidenav/ADMINISTRACION/sucursales/sucursales.component';
 import { DashboardSeguridadComponent } from './Items-sidenav/SEGURIDAD/dashboard-seguridad/dashboard-seguridad.component';
+import { SeguridadEmpleadosComponent } from './Items-sidenav/SEGURIDAD/seguridad-empleados/seguridad-empleados.component';
+import { PoliticasDeSeguridadComponent } from './Items-sidenav/SEGURIDAD/politicas-de-seguridad/politicas-de-seguridad.component';
+import { AuditoriasComponent } from './Items-sidenav/SEGURIDAD/auditorias/auditorias.component';
 
 
 
@@ -53,8 +56,11 @@ import { DashboardSeguridadComponent } from './Items-sidenav/SEGURIDAD/dashboard
     EmpresaComponent,
     SolicitudesComponent,
     SucursalesComponent,
-    DashboardSeguridadComponent
-
+    DashboardSeguridadComponent,
+    SeguridadEmpleadosComponent,
+    PoliticasDeSeguridadComponent,
+    SeguridadEmpleadosComponent,
+    AuditoriasComponent
 
     
   
