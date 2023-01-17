@@ -92,7 +92,8 @@ p{
   border-radius: 50%;
  
   overflow: hidden;
-  margin-left: 69px;
+ /* margin-left: 69px;*/
+ margin-left: 30px;
   margin-top: 30px;
 
   
@@ -237,7 +238,7 @@ border-radius: 5px;
      cursor: pointer;
      border-radius: 25px;
      
-      border:1px white solid;
+      
      margin-left: 16px;
   
         
@@ -261,7 +262,7 @@ border-radius: 5px;
        /*separar icono del contenedor*/
        cursor: pointer;
        border-radius: 25px;
-             border:1px white solid;
+            
        margin-left: 16px;
         
     
@@ -286,7 +287,7 @@ border-radius: 5px;
          cursor: pointer;
          border-radius: 25px;
          border-width: 30px;
-             border:1px white solid;
+             
          margin-left: 16px;
       
             
@@ -310,7 +311,7 @@ border-radius: 5px;
            cursor: pointer;
             border-radius: 25px;
            
-             border:1px white solid;
+             
            margin-left:  16px;
         
               
@@ -334,7 +335,7 @@ border-radius: 5px;
              /*separar icono del contenedor*/
              cursor: pointer;
              border-radius: 25px;
-             border:1px white solid;
+            
               
              margin-left:  16px;
                 

@@ -11,7 +11,6 @@
     <a mat-button id="btnOpen" (click)="opened=!opened"><mat-icon>
     </mat-icon></a>
     </div> 
-      
     <a mat-button id="btnEmpresa" ><mat-icon>
     </mat-icon></a>
     <p class="item">Encode S.A</p>
@@ -24,11 +23,6 @@
     
     <a id="btnSelect" mat-button><mat-icon>
     </mat-icon></a>
-
-   
-   
-
-   
   </div>
   <div class="contenedor-ultimos-iconos">
     <a id="btnHelp" mat-button><mat-icon>
@@ -42,13 +36,6 @@
 
     <a id="btnLogout" mat-button (click)="redirectLogout()"><mat-icon>
     </mat-icon></a>
-
-  
-
-  
-
-
-
     </div>
   </mat-toolbar-row>
 </mat-toolbar>
@@ -56,27 +43,23 @@
 <mat-sidenav-container>
 
   <mat-sidenav  [(opened)]="opened" mode="side">
-    <div class="contenedor-imagen">
+    <div class="contenedor-imagen" >
       <img  alt="" class="imagen">
     </div>
-    <p>Mariano Lopez</p>
+    <p >Mariano Lopez</p>
     <p id="rol" *ngFor="let nav of dataRol" (click)="getNameRol()">{{nav.rol}}</p>
     
     <hr>
     <div class="item-group">
-      
-      
      <div *ngFor="let nav of dataOpction" style="display:inline-flex; justify-content: center; align-items: center;">
-
        <img   src="{{nav.icon}}"  width="24" height="24" style="margin-left:10px " />
        <p class="item" style="color: white; " mat-list-item routerLink="nav.route"   (click)="redirect(nav.name)" >
         {{nav.name}}
       </p>
-
-      
     </div>
-   <p>Powered by   <span class="titulo" style="color:rgb(0, 191, 255)">&nbsp;EN<span style="color:rgb(255, 255, 255)">CODE</span> </span></p>
+
   </div>
+  <p>Powered by   <span class="titulo" style="color:rgb(0, 191, 255)">&nbsp;EN<span style="color:rgb(255, 255, 255)">CODE</span> </span></p>
   </mat-sidenav>
   <mat-sidenav-content>
     <div class="content">
