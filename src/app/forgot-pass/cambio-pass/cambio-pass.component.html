@@ -1,0 +1,27 @@
+<div class="container">
+   
+    
+    <div class="container2">
+        <form  (ngSubmit)="saveData()"  novalidate>
+            <label class="form-label"  for="login" style="font-size:x-large;font-weight: 800;">Cambio de contraseña</label>
+            <label class="form-label" style="font-weight: 800;"   for="username">Email</label>
+            <input class="form-control"  id="usuario" type="text" formControlName="usuario" id="usuario" required   placeholder="Ingresa su email"/>
+          
+            
+            
+            
+           
+    
+         
+    
+    
+            <button class="btn" value="Ingresar" routerLink="/roles" type="submit" routerLinkActive="router-link-active" (click)="redirectLogin()"   >Cambiar contraseña</button>
+            <div class="row2 ">
+            
+            <a type="button" class="registro" value="Registrarte" (click)="redirectLogin()" >Volver</a>
+            </div>
+        </form>
+        
+    </div>
+       
+    </div>

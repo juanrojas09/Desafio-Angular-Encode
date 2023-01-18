@@ -11,6 +11,7 @@ import { AdministracionHomeComponent } from './home-pages/administracion-home/ad
 import { SidebarComponent } from './home-pages/sidebar/sidebar.component';
 import { DashboardComponent } from './home-pages/dashboard/dashboard.component';
 import { RegistroComponent } from './register/registro/registro.component';
+import { CambioPassComponent } from './forgot-pass/cambio-pass/cambio-pass.component';
 
 const routes:Routes=[
   //ruta por defecto
@@ -58,6 +59,10 @@ const routes:Routes=[
     path:'register',
     component:RegistroComponent
   },
+  {
+  path:'forgot',
+  component:CambioPassComponent
+},
   {
     path:'**',
     redirectTo:'/login',

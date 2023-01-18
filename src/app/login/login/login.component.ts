@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, TemplateRef } from '@angular/core';
 import { Router } from '@angular/router';
 import { AbstractControl, FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import { CommonModule } from '@angular/common';
@@ -48,12 +48,35 @@ export class LoginComponent {
    this.dataUser.validateUser(userForm,passForm);
     if(this.myform.invalid || this.dataUser.validateUser(userForm,passForm)==false){
       console.log("invalido");
-      return;
+      return false;
+    }else{
+      console.log(this.myform.value);
+      this.redirect();
     }
-    console.log(this.myform.value);
-    this.redirect();
+    
+ 
+    return true;
+    
 
   }
+
+  userCorrecto:boolean=true;
+
+ validateUserForm(){
+    var userForm=this.myform.value.usuario;
+    var passForm=this.myform.value.contraseña;
+    
+    if( this.dataUser.validateUser(userForm,passForm)==false){
+     console.log("invalido"); 
+     this.userCorrecto=false;
+    }else{
+      
+    
+      this.userCorrecto=true;
+    }
+
+  }
+
   redirect(){
     
     this.router.navigate(['/roles']);
@@ -64,8 +87,11 @@ export class LoginComponent {
     this.router.navigate(['/register']);
   }
 
+redirectForgot(){
+  this.router.navigate(['/forgot']);
+}
 
-
+ 
 
 
 }
